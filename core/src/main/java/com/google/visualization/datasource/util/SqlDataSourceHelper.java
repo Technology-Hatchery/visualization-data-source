@@ -57,7 +57,6 @@ import org.apache.commons.lang.text.StrBuilder;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 
-import javax.sql.DataSource;
 import java.sql.Connection;
 import java.sql.Date;
 import java.sql.DriverManager;
@@ -97,16 +96,16 @@ public class SqlDataSourceHelper {
    * injection of pooled data sources.
    *
    * @param query The query.
-   * @param dataSource  The data source to get the query from.
    * @param tableName   The name of the table to query
    *
+   * @param connection
    * @return DataTable A data table with the data from the specified sql table,
    *     after applying the specified query on it.
    *
    * @throws DataSourceException Thrown when the data source fails to perform the action.
    */
-  public static DataTable executeQuery(Query query, DataSource dataSource, String tableName) throws SQLException, DataSourceException {
-    return executeQuery(query, dataSource.getConnection(), tableName);
+  public static DataTable executeQuery(Query query, String tableName, Connection connection) throws DataSourceException {
+    return executeQuery(query, connection, tableName);
   }
 
   /**
