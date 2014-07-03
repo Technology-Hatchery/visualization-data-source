@@ -1,0 +1,46 @@
+<html>
+<head>
+    <!--Load the AJAX API-->
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript">
+
+        // Load the Visualization API and the piechart package.
+        google.load('visualization', '1', {'packages':['corechart']});
+
+        // Set a callback to run when the Google Visualization API is loaded.
+        google.setOnLoadCallback(drawChart);
+
+        function drawChart() {
+            var myData = $.ajax({
+                url: "./php/getData.php",
+                dataType:"json",
+                async: false
+            }).responseText;
+
+            //document.write(myData);
+
+            // Create our data table out of JSON data loaded from server.
+            var data = new google.visualization.DataTable(myData);
+            var options = {
+                title: 'Age vs. Weight comparison',
+                hAxis: {title: 'Age', minValue: 0, maxValue: 15},
+                vAxis: {title: 'Weight', minValue: 0, maxValue: 15},
+                legend: 'none'
+            };
+
+            //document.write(data);
+
+            // Instantiate and draw our chart, passing in some options.
+            var chart = new google.visualization.ScatterChart(document.getElementById('chart_div'));
+            chart.draw(data, options);
+        }
+
+    </script>
+</head>
+
+<body>
+<!--Div that will hold the chart-->
+<div id="chart_div" style="width: 900px; height: 500px;"></div>
+</body>
+</html>

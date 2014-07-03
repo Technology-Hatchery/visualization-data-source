@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+    <title>Testing</title>
+</head>
+<body>
+
+<style>
+    body {
+        background-color: #000;
+    }
+
+    #demo {
+        width: 692px;
+        height: 60px;
+        background-color: #020;
+        padding: 8px;
+    }
+
+    #logo {
+        position: relative;
+        width: 60px;
+        height: 60px;
+        background: url(img/icons-390.png) no-repeat;
+    }
+
+    #mySvg {
+        position: relative;
+        width: 200px;
+        height: 400px;
+        background: url(svg/drawing.svg) no-repeat;
+    }
+
+</style>
+
+<!--- The following scripts are necessary to do TweenLite tweens on CSS properties -->
+
+
+<script type="text/javascript" src="js/greensock/plugins/CSSPlugin.min.js"></script>
+<script type="text/javascript" src="js/greensock/TweenLite.min.js"></script>
+<script>
+    //we'll use a window.onload for simplicity, but typically it is best to use either jQuery's $(document).ready() or $(window).load() or cross-browser event listeners so that you're not limited to one.
+    window.onload = function () {
+        var logo = document.getElementById("logo");
+        TweenLite.to(logo, 2, {left: "632px"});
+    }
+</script>
+
+<div id="demo">
+    <div id="logo"></div>
+</div>
+
+<div id="svg_test">
+    <div id="mySvg"></div>
+</div>
+
+<svg width="2cm" height="4cm" version="1.1"
+     xmlns="http://www.w3.org/2000/svg">
+    <desc>Four separate rectangles
+    </desc>
+    <rect id="rect1" x="10" y="10" width="50" height="60" fill="blue"
+          onmouseout="evt.target.setAttribute('opacity', '0.9');"
+          onmouseover="evt.target.setAttribute('opacity', '0.5');" opacity="0.9"/>
+
+    <!--<rect id="rect2" x="230" y="10" width="60" height="60" fill="green"/> -->
+</svg>
+
+<object width="400" height="400" type="image/svg" data="/svg/drawing.svg">Your browser does not support SVG</object>
+
+</body>
+</html>

@@ -1,0 +1,13 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" 
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="5cm" height="4cm" version="1.1"
+     xmlns="http://www.w3.org/2000/svg">
+  <desc>Four separate rectangles
+  </desc>
+<rect id="rect1" x="160" y="10" width="60" height="60" fill="blue" onmouseover="evt.target.setAttribute('opacity', '0.5');" onmouseout="evt.target.setAttribute('opacity', '0.9');" opacity="0.9"/>
+                     
+                       <rect id="rect2" x="230" y="10" width="60" height="60" fill="green"/>
+
+
+</svg>

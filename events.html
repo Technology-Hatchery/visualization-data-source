@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+    <title>Testing</title>
+</head>
+<body>
+<script type="text/javascript">
+    var foo = null; // object
+
+    function doMove() {
+        foo.style.left = parseInt(foo.style.left)+1+'px';
+        setTimeout(doMove,20); // call doMove in 20msec
+    }
+
+
+
+    function init() {
+        foo = document.getElementById('fooObject'); // get the "foo" object
+        foo.style.left = '0px'; // set its initial position to 0px
+        doMove(); // start animating
+    }
+
+
+    window.onload = init;
+
+</script>
+
+
+    setTimeout(doMove,500); // calls doSomething() 500 miliseconds from now
+    setInterval(doMove,500); // calls doSomething() every 500 miliseconds until stopped
+
+    function doMove() {
+        rect1.style.left = (foo.style.left+10)+'px'; // pseudo-property code: Move right by 10px
+    }
+
+    doMove(); // animate the object
+</script>
+
+
+<svg width="5cm" height="4cm" version="1.1"
+     xmlns="http://www.w3.org/2000/svg">
+    <desc>Four separate rectangles
+    </desc>
+    <rect id="rect1" x="160" y="10" width="60" height="60" fill="blue"
+          onmouseout="evt.target.setAttribute('opacity', '0.9');"
+          onmouseover="evt.target.setAttribute('opacity', '0.5');" opacity="0.9"/>
+
+    <!--<rect id="rect2" x="230" y="10" width="60" height="60" fill="green"/> -->
+</svg>
+
+</body>
+</html>

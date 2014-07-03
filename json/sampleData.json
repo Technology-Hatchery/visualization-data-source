@@ -1,0 +1,14 @@
+{
+    "cols": [
+        {"id":"","label":"Age","pattern":"","type":"number"},
+        {"id":"","label":"Weight","pattern":"","type":"number"}
+    ],
+    "rows": [
+        {"c":[{"v":8,"f":null},{"v":12,"f":null}]},
+        {"c":[{"v":4,"f":null},{"v":5.5,"f":null}]},
+        {"c":[{"v":11,"f":null},{"v":14,"f":null}]},
+        {"c":[{"v":4,"f":null},{"v":5,"f":null}]},
+        {"c":[{"v":3,"f":null},{"v":3.5,"f":null}]},
+        {"c":[{"v":6.5,"f":null},{"v":7,"f":null}]}
+    ]
+}

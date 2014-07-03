@@ -1,0 +1,132 @@
+{ "id": "ag9zfnN1cnZleWluc2lnaHRyDgsSBlN1cnZleRi7_wcM",
+    "name": "Precondition Survey 4",
+    "questions": [
+        {
+            "answers": [
+                {
+                    "index": "-1",
+                    "range": "0.0",
+                    "text": "HTML",
+                    "timeTaken": "11368",
+                    "user": "User(181001)"
+                },
+                {
+                    "index": "-1",
+                    "range": "0.0",
+                    "text": "magic",
+                    "timeTaken": "3712",
+                    "user": "User(351002)"
+                },
+                {
+                    "index": "-1",
+                    "range": "0.0",
+                    "text": "magic",
+                    "timeTaken": "6503",
+                    "user": "User(471001)"
+                },
+                {
+                    "index": "-1",
+                    "range": "0.0",
+                    "text": "hh",
+                    "timeTaken": "24505",
+                    "user": "User(661001)"
+                },
+                {
+                    "index": "-1",
+                    "range": "0.0",
+                    "text": "yes",
+                    "timeTaken": "10102",
+                    "user": "User(711001)"
+                },
+                {
+                    "index": "-1",
+                    "range": "0.0",
+                    "text": "going",
+                    "timeTaken": "20200",
+                    "user": "User(751001)"
+                }
+            ],
+            "id": "ag9zfnN1cnZleWluc2lnaHRyHAsSBlN1cnZleRi7_wcMCxIIUXVlc3Rpb24YAQw",
+            "text": "How is survey formed?",
+            "type": 2
+        },
+        {
+            "answers": [
+                {
+                    "index": "-1",
+                    "range": "65.0",
+                    "text": "",
+                    "timeTaken": "5724",
+                    "user": "User(181001)"
+                },
+                {
+                    "index": "-1",
+                    "range": "33.0",
+                    "text": "",
+                    "timeTaken": "2372",
+                    "user": "User(351002)"
+                },
+                {
+                    "index": "-1",
+                    "range": "68.0",
+                    "text": "",
+                    "timeTaken": "1494",
+                    "user": "User(471001)"
+                },
+                {
+                    "index": "-1",
+                    "range": "54.0",
+                    "text": "",
+                    "timeTaken": "8932",
+                    "user": "User(661001)"
+                },
+                {
+                    "index": "-1",
+                    "range": "41.0",
+                    "text": "",
+                    "timeTaken": "4418",
+                    "user": "User(711001)"
+                },
+                {
+                    "index": "-1",
+                    "range": "38.0",
+                    "text": "",
+                    "timeTaken": "28804",
+                    "user": "User(751001)"
+                }
+            ],
+            "id": "ag9zfnN1cnZleWluc2lnaHRyHAsSBlN1cnZleRi7_wcMCxIIUXVlc3Rpb24YAgw",
+            "text": "What is your age?",
+            "type": 1
+        },
+        {
+            "answers": [
+                {
+                    "index": "1",
+                    "range": "0.0",
+                    "text": "",
+                    "timeTaken": "3141",
+                    "user": "User(351002)"
+                },
+                {
+                    "index": "0",
+                    "range": "0.0",
+                    "text": "",
+                    "timeTaken": "3446",
+                    "user": "User(471001)"
+                }
+            ],
+            "choices": [
+                {
+                    "choice": "Male"
+                },
+                {
+                    "choice": "Female"
+                }
+            ],
+            "id": "ag9zfnN1cnZleWluc2lnaHRyHAsSBlN1cnZleRi7_wcMCxIIUXVlc3Rpb24YBAw",
+            "text": "What is your gender?",
+            "type": 0
+        }
+    ]
+}

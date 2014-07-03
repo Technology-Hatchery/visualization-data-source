@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://web.resource.org/cc/" id="chart" width="600" height="500">
+       <defs id="defs"></defs>
+       <g>
+              <rect x="0" y="0" width="600" height="500" fill="white"></rect>
+              <text text-anchor="middle" x="300" y="35" font-family="Arial" font-size="24" font-weight="bold" fill="black">Company Performance</text>
+              <rect x="442" y="206" width="143" height="127" fill="white"></rect>
+              <rect x="457" y="221" width="13" height="13" stroke="none" fill="#4684ee" ></rect>
+              <text x="473" y="232" font-family="Arial" font-size="13" fill="black">Country code</text>
+              <rect x="457" y="249" width="13" height="13" stroke="none" fill="#dc3912" ></rect>
+              <text x="473" y="260" font-family="Arial" font-size="13" fill="black">Population</text>
+              <rect x="457" y="277" width="13" height="13" stroke="none" fill="#ff9900" ></rect>
+              <text x="473" y="288" font-family="Arial" font-size="13" fill="black">Population Density</text>
+              <rect x="457" y="305" width="13" height="13" stroke="none" fill="#008000" ></rect>
+              <text x="473" y="316" font-family="Arial" font-size="13" fill="black"></text>
+              <rect x="114.33333333333333" y="54" width="312" height="396" stroke="#cccccc" fill="none"></rect>
+              <path d="M114.33333333333333,450L114.33333333333333,54" stroke="#cccccc" fill="none"></path>
+              <path d="M114.33333333333333,450L110.33333333333333,450M114.33333333333333,433.5L110.33333333333333,433.5M114.33333333333333,417L110.33333333333333,417M114.33333333333333,400.5L110.33333333333333,400.5M114.33333333333333,384L110.33333333333333,384M114.33333333333333,367.5L110.33333333333333,367.5M114.33333333333333,351L110.33333333333333,351M114.33333333333333,334.5L110.33333333333333,334.5M114.33333333333333,318L110.33333333333333,318M114.33333333333333,301.5L110.33333333333333,301.5M114.33333333333333,285L110.33333333333333,285M114.33333333333333,268.5L110.33333333333333,268.5M114.33333333333333,252L110.33333333333333,252M114.33333333333333,235.5L110.33333333333333,235.5M114.33333333333333,219L110.33333333333333,219M114.33333333333333,202.5L110.33333333333333,202.5M114.33333333333333,186L110.33333333333333,186M114.33333333333333,169.5L110.33333333333333,169.5M114.33333333333333,153L110.33333333333333,153M114.33333333333333,136.5L110.33333333333333,136.5M114.33333333333333,120L110.33333333333333,120M114.33333333333333,103.5L110.33333333333333,103.5M114.33333333333333,87L110.33333333333333,87M114.33333333333333,70.5L110.33333333333333,70.5M114.33333333333333,54L110.33333333333333,54" stroke="#cccccc" fill="none"></path>
+              <text text-anchor="end" x="109" y="217" font-family="Arial" font-size="16" fill="black">Japan</text>
+              <text text-anchor="end" x="109" y="201" font-family="Arial" font-size="16" fill="black">Russia</text>
+              <text text-anchor="end" x="109" y="184" font-family="Arial" font-size="16" fill="black">Nigeria</text>
+              <text text-anchor="end" x="109" y="168" font-family="Arial" font-size="16" fill="black">Bangladesh</text>
+              <text text-anchor="end" x="109" y="151" font-family="Arial" font-size="16" fill="black">Pakistan</text>
+              <text text-anchor="end" x="109" y="135" font-family="Arial" font-size="16" fill="black">Brazil</text>
+              <text text-anchor="end" x="109" y="118" font-family="Arial" font-size="16" fill="black">Indonesia</text>
+              <text text-anchor="end" x="109" y="102" font-family="Arial" font-size="16" fill="black">United States</text>
+              <text text-anchor="end" x="109" y="85" font-family="Arial" font-size="16" fill="black">India</text>
+              <text text-anchor="end" x="109" y="69" font-family="Arial" font-size="16" fill="black">China</text>
+              <path d="M114.33333333333333,450L426.3333333333333,450" stroke="#cccccc" fill="none"></path>
+              <path d="M114.33333333333333,454L114.33333333333333,450L114.33333333333333,54M218.33333333333331,454L218.33333333333331,450L218.33333333333331,54M322.3333333333333,454L322.3333333333333,450L322.3333333333333,54M426.3333333333333,454L426.3333333333333,450L426.3333333333333,54" stroke="#cccccc" fill="none"></path>
+              <text text-anchor="middle" x="114" y="473" font-family="Arial" font-size="16" fill="black">0</text>
+              <text text-anchor="middle" x="218" y="473" font-family="Arial" font-size="16" fill="black">500,000,000</text>
+              <text text-anchor="middle" x="322" y="473" font-family="Arial" font-size="16" fill="black">1,000,000,000</text>
+              <text text-anchor="middle" x="426" y="473" font-family="Arial" font-size="16" fill="black">1,500,000,000</text>
+              <g>
+                     <rect x="114" y="211" width="0" height="3" stroke="none" fill="#ff9900"></rect>
+                 </g>
+              <g>
+                     <rect x="114" y="208" width="27" height="3" stroke="none" fill="#dc3912" onmouseover="evt.target.setAttribute('opacity', '0.5');"></rect>
+                 </g>
+              <g>
+                     <rect x="114" y="194" width="0" height="3" stroke="none" fill="#ff9900"></rect>
+                 </g>
+              <g>
+                     <rect x="114" y="191" width="30" height="3" stroke="none" fill="#dc3912" stroke-width="0"></rect>
+                 </g>
+              <g>
+                     <rect x="114" y="178" width="0" height="3" stroke="none" fill="#ff9900"></rect>
+                 </g>
+              <g>
+                     <rect x="114" y="175" width="31" height="3" stroke="none" fill="#dc3912"></rect>
+                 </g>
+              <g>
+                     <rect x="114" y="161" width="0" height="3" stroke="none" fill="#ff9900"></rect>
+                 </g>
+              <g>
+                     <rect x="114" y="158" width="33" height="3" stroke="none" fill="#dc3912"></rect>
+                 </g>
+              <g>
+                     <rect x="114" y="145" width="0" height="3" stroke="none" fill="#ff9900"></rect>
+                 </g>
+              <g>
+                     <rect x="114" y="142" width="34" height="3" stroke="none" fill="#dc3912"></rect>
+                 </g>
+              <g>
+                     <rect x="114" y="128" width="0" height="3" stroke="none" fill="#ff9900"></rect>
+                 </g>
+              <g>
+                     <rect x="114" y="125" width="39" height="3" stroke="none" fill="#dc3912"></rect>
+                 </g>
+              <g>
+                     <rect x="114" y="112" width="0" height="3" stroke="none" fill="#ff9900"></rect>
+                 </g>
+              <g>
+                     <rect x="114" y="109" width="48" height="3" stroke="none" fill="#dc3912"></rect>
+                 </g>
+              <g>
+                     <rect x="114" y="95" width="0" height="3" stroke="none" fill="#ff9900"></rect>
+                 </g>
+              <g>
+                     <rect x="114" y="92" width="63" height="3" stroke="none" fill="#dc3912" stroke-width="0"></rect>
+                 </g>
+              <g>
+                     <rect x="114" y="79" width="0" height="3" stroke="none" fill="#ff9900"></rect>
+                 </g>
+              <g>
+                     <rect x="114" y="76" width="235" height="3" stroke="#e0e0e0" fill="#dc3912" stroke-width="2"></rect>
+                 </g>
+              <g>
+                     <rect x="114" y="62" width="0" height="3" stroke="none" fill="#ff9900"></rect>
+                 </g>
+              <g>
+                     <rect x="114" y="59" width="275" height="3" stroke="none" fill="#dc3912" stroke-width="0"></rect>
+                 </g>
+          </g>
+   </svg>
