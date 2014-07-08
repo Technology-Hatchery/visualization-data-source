@@ -4,9 +4,9 @@
     xsi:schemaLocation="http://java.sun.com/xml/ns/persistence/orm http://java.sun.com/xml/ns/persistence/orm_1_0.xsd"
     version="1.0">
     <description>JPA Mapping file for DataNucleus Tutorial with JPA</description>
-    <package>org.datanucleus.samples.jpa.tutorial</package>
+    <package>org.technologyhatchery.samples.datasources</package>
 
-    <entity class="org.datanucleus.samples.jpa.tutorial.Product" name="Product">
+    <entity class="org.technologyhatchery.samples.datasources.Product" name="Product">
         <table name="JPA_PRODUCTS"/>
         <inheritance strategy="JOINED"/>
         <attributes>
@@ -22,7 +22,7 @@
         </attributes>
     </entity>
 
-    <entity class="org.datanucleus.samples.jpa.tutorial.Book" name="Book">
+    <entity class="org.technologyhatchery.samples.datasources.Book" name="Book">
         <table name="JPA_BOOKS"/>
         <attributes>
             <basic name="isbn">
@@ -37,7 +37,7 @@
         </attributes>
     </entity>
 
-    <entity class="org.datanucleus.samples.jpa.tutorial.Inventory" name="Inventory">
+    <entity class="org.technologyhatchery.samples.datasources.Inventory" name="Inventory">
         <table name="JPA_INVENTORY"/>
         <attributes>
             <id name="name">

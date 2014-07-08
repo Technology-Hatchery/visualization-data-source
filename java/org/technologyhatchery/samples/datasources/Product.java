@@ -15,7 +15,7 @@ limitations under the License.
 Contributors:
     ...
 **********************************************************************/
-package org.datanucleus.samples.jpa.tutorial;
+package org.technologyhatchery.samples.datasources;
 
 import javax.persistence.Basic;
 import javax.persistence.Column;

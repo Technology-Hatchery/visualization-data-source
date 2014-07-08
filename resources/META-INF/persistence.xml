@@ -4,11 +4,11 @@
     xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_1_0.xsd" version="1.0">
 
     <!-- Tutorial "unit" -->
-    <persistence-unit name="Tutorial">
+    <persistence-unit name="CloudSQL">
         <!--<mapping-file>../resources/META-INF/orm.xml</mapping-file>-->
-        <class>org.datanucleus.samples.jpa.tutorial.Inventory</class>
-        <class>org.datanucleus.samples.jpa.tutorial.Product</class>
-        <class>org.datanucleus.samples.jpa.tutorial.Book</class>
+        <class>org.technologyhatchery.samples.datasources.Inventory</class>
+        <class>org.technologyhatchery.samples.datasources.Product</class>
+        <class>org.technologyhatchery.samples.datasources.Book</class>
         <exclude-unlisted-classes/>
 
         <properties>
