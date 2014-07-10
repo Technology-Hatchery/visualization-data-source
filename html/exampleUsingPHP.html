@@ -1,7 +1,8 @@
 <html>
 <head>
-    <!--Load the AJAX API-->
+    <!--Call the Google Loader-->
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <!--Call jQuery-->
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script type="text/javascript">
 
@@ -13,7 +14,7 @@
 
         function drawChart() {
             var myData = $.ajax({
-                url: "./php/getData.php",
+                url: "../php/getData.php",
                 dataType:"json",
                 async: false
             }).responseText;

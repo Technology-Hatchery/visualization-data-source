@@ -3,7 +3,7 @@
 include 'functions.php';
 
 // Parameters
-$source = 2;
+$source = 3;
 $debug = 0;
 
 if ($source == 0) {
@@ -40,7 +40,10 @@ if ($source == 0) {
     $types = array("number", "number");
     $output = csvToDataFrame($types,$result);
     echo $output;
-} else {
+} elseif ($source == 3) {
+    // Entity
+}
+else {
     echo "Invalid source!";
 }
 
