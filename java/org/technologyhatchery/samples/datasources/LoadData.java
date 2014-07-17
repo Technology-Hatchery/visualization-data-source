@@ -19,10 +19,12 @@ package org.technologyhatchery.samples.datasources;
 
 import com.google.gson.stream.JsonWriter;
 import com.google.gson.stream.JsonReader;
-import org.apache.commons.io.IOUtils;
+//import org.apache.commons.io.IOUtils;
 import org.datanucleus.api.jpa.JPAEntityManager;
-import org.datanucleus.samples.jpa.tutorial.*;
+//import org.datanucleus.samples.jpa.tutorial.*;
 import org.datanucleus.util.NucleusLogger;
+//import org.datanucleus.jpa.EntityManagerFactoryImpl;
+//import org.datanucleus.jpa.EntityManagerImpl;
 
 import com.mobinsight.server.*;
 
@@ -134,7 +136,7 @@ public class LoadData
         System.out.println("");
     }
 
-    public static void removeData(EntityManagerFactory emf) {
+    /*public static void removeData(EntityManagerFactory emf) {
 
         // Clean out the database
         EntityManager em = emf.createEntityManager();
@@ -186,7 +188,7 @@ public class LoadData
         System.out.println("");
         System.out.println("End of Tutorial");
         emf.close();
-    }
+    }*/
 
 
 
@@ -274,7 +276,7 @@ public class LoadData
 
     }
 
-    public static void performQuery(EntityManagerFactory emf) {
+    /*public static void performQuery(EntityManagerFactory emf) {
 
         // Perform some query operations
         EntityManager em = emf.createEntityManager();
@@ -317,7 +319,7 @@ public class LoadData
             em.close();
         }
         System.out.println("");
-    }
+    }*/
 
     /*public static void retrieveItems(EntityManagerFactory emf) {
 
