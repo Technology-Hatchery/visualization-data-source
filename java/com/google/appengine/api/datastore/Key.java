@@ -43,8 +43,6 @@ public final class Key implements Serializable, Comparable<Key> {
 
   private String appId;
 
-  @Id
-  @GeneratedValue(strategy = GenerationType.IDENTITY)
   private long id;
   private final String name;
 

@@ -15,7 +15,6 @@ import com.google.appengine.api.datastore.Key;
 public class Answer {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    //@GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     //private Key id;
 

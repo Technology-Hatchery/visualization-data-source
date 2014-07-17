@@ -1,11 +1,11 @@
 {
-    "id": "ag9zfnN1cnZleWluc2lnaHRyDgsSBlN1cnZleRiZxRAM",
+    "id": "10",
     "name": "Registration branch",
     "creator": "unknown",
     "questions": [
         {
             "answerType": 2,
-            "id": "ag9zfnN1cnZleWluc2lnaHRyHAsSBlN1cnZleRiZxRAMCxIIUXVlc3Rpb24YAQw",
+            "id": "20",
             "image": "http://2.375585449099093977.surveyinsight.appspot.com/api/image?question=ag9zfnN1cnZleWluc2lnaHRyHAsSBlN1cnZleRiZxRAMCxIIUXVlc3Rpb24YAQw",
             "serialNumber": "1",
             "text": "How is survey formed?"
@@ -17,14 +17,14 @@
                 "step": 1.0
             },
             "answerType": 1,
-            "id": "ag9zfnN1cnZleWluc2lnaHRyHAsSBlN1cnZleRiZxRAMCxIIUXVlc3Rpb24YAgw",
+            "id": "20",
             "serialNumber": "2",
             "text": "What is your age?"
         },
         {
             "answerChoices": [ "Male", "Female" ],
             "answerType": 0,
-            "id": "ag9zfnN1cnZleWluc2lnaHRyHAsSBlN1cnZleRiZxRAMCxIIUXVlc3Rpb24YBAw",
+            "id": "20",
             "precondition": {
                 "answerIndex": -1,
                 "answerRangeHigh": 100.0,

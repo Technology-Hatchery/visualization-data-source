@@ -116,11 +116,6 @@ public class LoadData
             //em.persist(survey);
             //em.persist(question);
             //em.persist(answer);
-            System.out.println("Items are pending persist");
-
-            tx.commit();
-            System.out.println("Items have been persisted");
-
         } catch (Exception e) {
             NucleusLogger.GENERAL.error(">> Exception persisting data", e);
             System.err.println("Error persisting data : " + e.getMessage());

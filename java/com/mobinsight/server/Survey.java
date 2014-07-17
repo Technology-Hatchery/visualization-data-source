@@ -26,6 +26,7 @@ import com.google.gson.stream.JsonWriter;
 public class Survey {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    //TODO-Key
     private int mId;
     //private Key mId;
 
@@ -36,9 +37,10 @@ public class Survey {
     @OneToMany(cascade = CascadeType.PERSIST)
     private List<Question> mQuestions;
 
-    public int getId() {
+    public String getId() {
     //public Key getId() {
-        return mId;
+        //TODO-Key
+        return Integer.toString(mId);
     }
     public String getIdString() { return Integer.toString(mId); }
     //public String getIdString() { return KeyFactory.keyToString(mId); }
@@ -55,24 +57,23 @@ public class Survey {
         while (reader.hasNext()) {
             String name = reader.nextName();
             if (name.equals("id")) {
-                //TODO Debug
-                this.mId = 2;
-                reader.nextString();
+                //TODO-Key
+                this.mId = reader.nextInt();
                 //this.mId = Integer.parseInt(reader.nextString());
                 //this.mId = KeyFactory.stringToKey(reader.nextString());
                 // Validate that it is pointing to an object that already exists.
                 try {
                     Survey oldItem = em.find(Survey.class, this.mId);
                     if (oldItem == null) {
-                        //TODO Debug
-                        this.mId = -1;
+                        //TODO-Key
+                        this.mId = 0;
                         //this.mId = null;
                     } else {
                         // Copy over the creation time so we preserve it across edits of the same survey.
                         this.mCreationTime = oldItem.mCreationTime;
                     }
                 } catch (IllegalArgumentException e) {
-                    this.mId = -1;
+                    this.mId = 0;
                     //this.mId = null;
                 }
             } else if (name.equals("name")) {

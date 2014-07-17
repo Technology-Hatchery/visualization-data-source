@@ -9,7 +9,8 @@ import com.google.appengine.api.datastore.Key;
 
 @Entity
 public class AnswerRange {
-    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     //private Key id;
 

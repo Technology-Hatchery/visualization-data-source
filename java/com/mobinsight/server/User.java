@@ -20,7 +20,9 @@ public class User {
     public static final int OS_ANDROID = 1;
     public static final int OS_IPHONE = 2;
 
-    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    //TODO-Key
     private int mId;
     //private Key mId;
 
@@ -42,9 +44,9 @@ public class User {
         //return KeyFactory.keyToString(mId);
     }
 
-    public int getId() {
+    public String getId() {
     //public Key getId() {
-        return mId;
+        return Integer.toString(mId);
     }
 
     public String getEmail() {

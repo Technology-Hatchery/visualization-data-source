@@ -13,7 +13,8 @@ import com.google.appengine.api.datastore.Key;
  */
 @Entity
 public class Precondition {
-    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     //private Key id;
 
@@ -33,8 +34,8 @@ public class Precondition {
     }
 
 	//public Key getId() {
-	public int getId() {
-			return id;
+	public String getId() {
+			return Integer.toString(id);
 	}
 
 	public String getSerialNumber() {

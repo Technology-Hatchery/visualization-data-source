@@ -15,7 +15,8 @@ import com.mobinsight.user.GaeUser;
 @Entity
 public class Image {
 
-    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int mId;
     //private Key mId;
     private Blob image;

@@ -22,6 +22,7 @@ public class Question {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     //Specifies the properties of the question
+    //TODO-Key
     private int mId;
     //private Key mId;
     private String serialNumber;
@@ -48,7 +49,7 @@ public class Question {
     // Answer gets added to the above list. Then we can do a quick search with this field for analytics.
     private ArrayList<String> mUsersAnswered = new ArrayList<String>();
     private static final Logger log = Logger.getLogger(Question.class.getName());
-    public int getId() { return mId; }
+    public String getId() { return Integer.toString(mId); }
     //public Key getId() { return mId; }
     public String getIdString() { return Integer.toString(mId); }
     //public String getIdString() { return KeyFactory.keyToString(mId); }
@@ -68,15 +69,16 @@ public class Question {
         while (reader.hasNext()) {
             String name = reader.nextName();
             if (name.equals("id")) {
+                //TODO-Key
                 //this.mId = Integer.parseInt(reader.nextString());
-                this.mId = 5;
-                reader.nextString();
+                this.mId = reader.nextInt();
                 //this.mId = KeyFactory.stringToKey(reader.nextString());
                 // Validate that it is pointing to an object that already exists.
                 try {
                     Question existingItem = em.find(Question.class, this.mId);
                     if (existingItem == null) {
-                        this.mId = -1;
+                        //TODO-Key
+                        this.mId = 0;
                         //this.mId = null;
                     } else {
                         // JSON doesn't have the image data, so when parsing a question that is an update
@@ -84,7 +86,8 @@ public class Question {
                         this.mImage = existingItem.mImage;
                     }
                 } catch (IllegalArgumentException e) {
-                    this.mId = -1;
+                    //TODO-Key
+                    this.mId = 0;
                     //this.mId = null;
                 }
             } else if (name.equals("serialNumber")) {
@@ -225,6 +228,7 @@ public class Question {
 
     public void writeToJson(JsonWriter writer) throws IOException {
         writer.beginObject();
+        //TODO-Key
         String idStr = Integer.toString(mId);
         //String idStr = KeyFactory.keyToString(mId);
         writer.name("id").value(idStr);
@@ -284,6 +288,7 @@ public class Question {
             throw new IOException("Question was not answered by this user");
         }
         writer.beginObject();
+        //TODO-Key
         String idStr = Integer.toString(mId);
         //String idStr = KeyFactory.keyToString(mId);
         writer.name("id").value(idStr);
