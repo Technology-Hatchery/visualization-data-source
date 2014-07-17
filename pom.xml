@@ -253,8 +253,8 @@
         <dependency>
             <groupId>org.datanucleus</groupId>
             <artifactId>datanucleus-core</artifactId>
-            <!--version>[4.0.0-m1, 4.9)</version-->
-            <version>3.2.14</version>
+            <version>[4.0.0-m1, 4.9)</version>
+            <!--version>3.2.14</version-->
             <!--version>3.1.0-release</version-->
         </dependency>
         <dependency>
