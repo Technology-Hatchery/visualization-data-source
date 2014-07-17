@@ -1,0 +1,86 @@
+[
+  {
+    "content": "#Question 1\n\n**Of the two major initiatives profiled in the case (Fone+ and Windows Starter edition), which one do you find more suitable to the context of China?  In India?  Please discuss the pros and cons of both alternatives and justify your recommendations.**",
+    "children": [
+      {
+        "content": "##Recommendation for the countries\nMicrosoft should pursue the Windows Starter edition initiative in China and the Fone+ initiative in India because the context of the two countries is very different and makes one initiative favorable over the other one.  Additionally, the initiatives differ with respect to how well they fit in with the strategic goals of Microsoft as well as the relationships with the Chinese government that are specific to Microsoft and present a competitive advantage for a foreign company operating in China due the highly restrictive nature of the Chinese economy."
+      },
+      {
+        "content": "##Windows Starter edition\nThe Windows Starter edition initiative is easier for Microsoft to execute than the Fone+ initiative because it leverages Microsoft’s existing core competencies in software development: 30% of their business revenues came from Client in 2006 (which includes standard Windows operating systems), and 1% came from Mobile and Embedded Services (Exhibit 5).  Additionally, the pilot for the Fone+ was assigned to Ya-Qin Zhang who ran the Redmond-based worldwide embedded team.  This team focussed on Blackberry users which was out of sync with the stripped down features of the Fone+ and could actively be rejected due to the negative impact on the group's profitability."
+      },
+      {
+        "content": "##Fone+\nFrom a strategy standpoint, the Fone+ initiative worked well with the Beijing Initiative because more households had cell phones than PCs in China (40% versus 17%) and the Fone+ was marketed as \"more of a phone by day and entry-level PC by night\".  Furthermore, multiple focus groups conducted by Eric Chang in China showed that 14-year olds preferred a cellphone over a PC as an ideal computing device.   The Fone+ initiative also worked well with Craig Mundie's self proclaimed role as someone who tried to fill in the \"white spaces\" in Microsoft's offerings.  In India, there was already work being done a few novel hardware products at the India Development Center (IDC) where 60 engineers created a new product for Microsoft in two and a half years: the RFID adapter which evinced immediate interest from Walmart.  This team was also working on a new computer called the Multi-Point Computer to better conform to the use case in small villages of multiple children sharing the same computer.  Could the Fone+ be another new hardware product that better fits in with the computing use cases of users in India compared with traditional PCs?\n\n"
+      },
+      {
+        "content": "##China- Research Institutions\nIn the context of China, Microsoft should pursue the Windows Starter edition initiative because it best leverage the gains it has made over the last decade from its research institutions, from the increasingly favorable relations between Microsoft/US and the Chinese government, and from its strategic partnerships.  Microsoft Research Asia (MRSA) was devoted to research in areas such as multimedia, Internet technologies, and speech recognition and many of the technologies that it developed were commercialized in-house. `It had attracted more than 180 researchers and around 200 graduate students from local universities, and the quality of its publications were viewed as \"comparable to that of the MIT, CMU and Stanford computer science departments\".`\n\n",
+        "children": [
+          {
+            "content": ""
+          },
+          {
+            "content": "###China\n* China has 4x cell phones users per 100 people and 3x higher PCs\n* Had fewer local languages which made localization easier\n* Had fewer english speakers which made the barrier to piracy higher\n* China had the largest piracy rate in the world\n* China had 2x fewer developers\n* China was more advanced in IT infrastructure compared to India\n* China has a more centralized and stable government\n",
+            "children": [
+              {
+                "content": "####Conclusion\nMicrosoft and the Chinese government have a well established relationship: political support and also legislative support.  Microsoft also has access to good talent through it research lab.  Microsoft has a partnership with Lenovo to provide an OEM channel. There are fewer developers and they are fragmented.  IT infrastructure is lacking.  Microsoft should leverage its current position and help China to better compete in the knowledge economy through Microsoft China and leverage the partnership with TCS through the Sino-India Cooperative Office of China."
+              }
+            ]
+          },
+          {
+            "content": "###China\n* Success with the Microsoft Research Asia (MSRA) in attracting talented researchers and publishing lots of papers\n* Launched Microsoft China R&D Group (CRD) in January 2006"
+          }
+        ]
+      },
+      {
+        "content": "##China- Political situation\nThe political situation in China was very different from the political situation in India.  In China the central government was much more powerful, and state owned enterprises (SOE) were more common.  Because the government was fairly stable, Microsoft could and did negotiate with them to change the market context to better protect their business interests.  In India the governments changed frequently which made it difficult to operate with the same level of certainty.  In China, because the SOEs had the backing of the government, it was critical that Microsoft win over the government in advance because otherwise the business would be steered away from Microsoft to these SOEs.",
+        "children": [
+          {
+            "content": "### China\n* Recent Beijing declaration in 2007 at the Microsoft Government Leaders Forum in Beijing\n* Signed several MOUs (National Development Reform in June 2002 and “Great Wall Plan” in 2002).  \n* Government signed an agreement in March 2006 to have PCs come with pre-installed software and extended criminal penalties for people caught with small amounts of pirated DVDs\n* Government Security Program was successful in getting the Chinese government to sign up in order to allay fears that there was malicious code\n\n"
+          }
+        ]
+      },
+      {
+        "content": "##China- Partnerships\nLastly, in addition to having strong research institutions and  good relations with the central governments, Microsoft had formed several joint ventures with companies in China, which was a requirement by the government requiring foreign businesses to operate in China; however they also had an agreement with Lenovo to jointly market PCs.  This agreement will help Microsoft market Windows Starter edition, even though the top four PC OEMs control PC OEMs control 65% - 70% of the market and their financial incentives were against selling Windows Starter edition.  Microsoft can work with Lenovo to include their OS after the new law that passed in March 2006 allowing the OS to come pre-installed.",
+        "children": [
+          {
+            "content": "###China\n* Forged strategic relationships with Sinopec and PetroChina AND launched Internet portal MSN in China through joint-venture with Shanghai Alliance Investment\n* Agreement with Lenovo (main local hardware company) to jointly market PCs\n  * This is a channel for Microsoft to market Windows\n* Partnership between Microsoft China and TCS through the Sino-India Cooperative Office of China in June 2005\n"
+          }
+        ]
+      },
+      {
+        "content": "##India- Research Institutions\nIndia presents a very different context from China in terms of the new developments from their research institutions, their relationship with the government, the economics in the IT space and their partnerships, and their localization market entry strategy.  The India Development Center (IDC) had modest beginnings and did not have a clear mandate, its primary purpose being to save on costs by moving low-end work to India; however it had achieved a few successes in the development of a hardware product, the RFID.  India had huge IT infrastructure problems: cell phone penetration was almost 4x less and annual PC sales about 5x less than China even though they had similar populations.  These IT infrastructure create a compelling need for novel hardware products such as a phone over a PC because it can serve more than one purpose.",
+        "children": [
+          {
+            "content": "###India\n* The products coming out of India Development Center (IDC) were computing hardware products and not new software\n* Microsoft had a pay-as-you-go system for computers\n"
+          },
+          {
+            "content": "###India\n* India has 4x fewer cell phone users per 100 people, 5x fewer PC sales, and 3x fewer PCs\n* India has a severe lack of IT infrastructure --> this favors the phone\n* Conclusion: Microsoft should be involved in India to get access to the developers, but it is not a good market for them to launch their OS"
+          }
+        ]
+      },
+      {
+        "content": "##India- Political Situation\nThe relationships between the leaders of China and India with Bill Gates could not have been more different.  President Hu Jintao of China visited the Gates residence in 2006 and said \"I'm a friend of Microsoft\"; however President APJ Abdul Kalam of India said of Gates that \"our views are different\".  It was also harder to form relationships in India because the government changed more frequently, and Microsoft began focusing on India almost 10 years after it began focusing on China and had not made nearly the same amount of progress on the political front.",
+        "children": [
+          {
+            "content": "###India\n* India government was less centralized and more fractured, and changed due to coalitions\n* Microsoft did not have the support of the government: the president of India was a respected technocrat who favored open-source codes"
+          }
+        ]
+      },
+      {
+        "content": "##India- Economics\nIndia had 18% of the world's developers, strongly favored open-source solutions, and used English as the national language in a sea of local languages.  Part of the value proposition that Microsoft China sold to the Chinese government is that it could help the country compete in the knowledge economy, since up until that point they were successful in the manufacturing economy.  This would not work in India as it was already fairly well positioned in the knowledge economy.  With a strong preference for open-source solutions and combined with the technical resources to support those installations, Microsoft would have a difficult time selling their non-free Windows Starter edition.  Microsoft had heavy collaboration in India (“360-degree partnership” to “sell to, buy from, and sell with” firms such as Infosys, TCS and Wipro), which was probably done to increase developer levels of satisfaction.  Lastly, there was already a large presence by IBM and Google which would increase competition as compared to China.",
+        "children": [
+          {
+            "content": "###India\n* Favors open source and has 2x more developers\n* Microsoft had a joint venture with Infosys through Catalytic IT\n* Google and IBM would provide strong competition in India"
+          }
+        ]
+      },
+      {
+        "content": "##India- Market Entry Strategy\nThe strategy that Microsoft used in India to \"localize\" the Windows Starter edition was not met with favorable reactions and is more costly to implement.  Because English was the language of business, parents preferred that their kids use the English version which simultaneously removed the benefits of the localized version and also made it more likely that they would pirate the English version.  Because there were so many local languages (18 in India compared to 3 in China), it would be much more costly for Microsoft to perform the language localizations which will reduce their profitability.",
+        "children": [
+          {
+            "content": "###India\n* Had more local languages and more english speakers which made localization more difficult and a less effective barrier to piracy\n* The Tamil and Hindi versions of Windows Starter edition had received a cold reception from parents who wanted their kids to use the English version\n"
+          }
+        ]
+      }
+    ]
+  }
+]

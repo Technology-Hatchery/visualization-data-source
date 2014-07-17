@@ -166,6 +166,14 @@
         </dependency-->
 
 
+        <!-- Hibernate -->
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-validator</artifactId>
+            <version>5.1.1.Final</version>
+        </dependency>
+
+
         <!-- IBM -->
         <dependency>
             <groupId>com.ibm.icu</groupId>
@@ -206,46 +214,48 @@
 		</dependency>
 
         <!-- Open CSV -->
-        <dependency>
+        <!--dependency>
             <groupId>net.sf.opencsv</groupId>
             <artifactId>opencsv</artifactId>
             <version>1.8</version>
-        </dependency>
+        </dependency-->
 
         <!-- SourceForce -->
         <dependency>
             <groupId>net.sourceforge.javacsv</groupId>
             <artifactId>javacsv</artifactId>
             <version>2.0</version>
-        </dependency>		
-		<dependency>
+        </dependency>
+		<!--dependency>
 			<groupId>cglib</groupId>
 			<artifactId>cglib-nodep</artifactId>
 			<version>3.1</version>
-		</dependency>
+		</dependency-->
 		
 		
 		<!-- Spring -->
-		<dependency>
+		<!--dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-beans</artifactId>
-			<version>4.0.5.RELEASE</version>
-		</dependency>
+			<version>4.0.5.RELEASE</version>e
+		</dependency-->
 
 		
         <!-- Testing -->
-		<dependency>
+		<!--dependency>
 			<groupId>org.testng</groupId>
 			<artifactId>testng</artifactId>
 			<version>6.8.8</version>
-		</dependency>
+		</dependency-->
 		
 		
         <!-- DataNucleus -->
         <dependency>
             <groupId>org.datanucleus</groupId>
             <artifactId>datanucleus-core</artifactId>
-            <version>[4.0.0-m1, 4.9)</version>
+            <!--version>[4.0.0-m1, 4.9)</version-->
+            <version>3.2.14</version>
+            <!--version>3.1.0-release</version-->
         </dependency>
         <dependency>
             <groupId>org.datanucleus</groupId>
@@ -257,7 +267,7 @@
             <artifactId>javax.persistence</artifactId>
             <version>2.1.0</version>
         </dependency>
-        <dependency>
+        <!--dependency>
             <groupId>org.datanucleus</groupId>
             <artifactId>datanucleus-rest</artifactId>
             <version>2.0.1</version>
@@ -266,7 +276,7 @@
             <groupId>org.datanucleus</groupId>
             <artifactId>datanucleus-api-jdo</artifactId>
             <version>4.0.0-release</version>
-        </dependency>
+        </dependency-->
 
         <dependency>
             <groupId>log4j</groupId>
@@ -274,7 +284,6 @@
             <version>[1.2, 1.3)</version>
         </dependency>
 
-        <!-- ENABLE THIS FOR MYSQL -->
         <dependency>
             <groupId>org.datanucleus</groupId>
             <artifactId>datanucleus-rdbms</artifactId>
@@ -321,7 +330,7 @@
                 <version>4.0.0-release</version>
                 <configuration>
                     <api>JPA</api>
-                    <persistenceUnitName>CloudSQL</persistenceUnitName>
+                    <persistenceUnitName>MobinsightAlfred</persistenceUnitName>
                     <log4jConfiguration>${basedir}/resources/log4j.properties</log4jConfiguration>
                     <verbose>false</verbose>
                 </configuration>

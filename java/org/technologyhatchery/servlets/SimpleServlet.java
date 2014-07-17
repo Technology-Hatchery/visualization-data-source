@@ -47,13 +47,13 @@ public class SimpleServlet extends HttpServlet {
             // Create an EntityManagerFactory for this "persistence-unit"
             // See the file "META-INF/persistence.xml"
             out.println("Create Entity Manager Factory<br />");
-            EntityManagerFactory emf = Persistence.createEntityManagerFactory("CloudSQL");
+            EntityManagerFactory emf = Persistence.createEntityManagerFactory("MobinsightAlfred");
             LoadData ex = new LoadData();
 
             out.println("Starting to execute the statements<br />");
             out.println("=============================");
             out.println("CreateAdd<br />");
-            ex.createAdd(emf);
+            ex.createAdd(emf, out);
             //out.println("retrieveInventory<br />");
             //ex.retrieveItems(emf);
             //System.out.println("performQuery<br />");
