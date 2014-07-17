@@ -15,7 +15,7 @@ limitations under the License.
 Contributors:
     ...
 **********************************************************************/
-package org.technologyhatchery.samples.datasources;
+package org.technologyhatchery.samples.datasources.archive;
 
 import java.util.*;
 

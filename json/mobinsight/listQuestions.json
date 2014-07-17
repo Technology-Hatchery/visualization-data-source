@@ -1,0 +1,34 @@
+{"questions": [
+    {
+        "id": "1",
+        "serialNumber": "1",
+        "text": "How is survey formed?",
+        "answerType": 2
+    },
+    {
+        "id": "2",
+        "serialNumber": "2",
+        "text": "What is your age?",
+        "answerType": 1,
+        "answerRange": {
+            "low": 18.0,
+            "high": 100.0,
+            "step": 1.0
+        }
+    },
+    {
+        "id": "3",
+        "serialNumber": "3",
+        "text": "What is your gender?",
+        "answerType": 0,
+        "answerChoices": ["Male", "Female"],
+        "precondition": {
+            "question": "ag9zfnN1cnZleWluc2lnaHRyHAsSBlN1cnZleRiZxRAMCxIIUXVlc3Rpb24YAQw",
+            "questionSerialNumber": "1",
+            "answerIndex": -1,
+            "answerText": "magic",
+            "answerRangeLow": 0.0,
+            "answerRangeHigh": 100.0
+        }
+    }
+]}

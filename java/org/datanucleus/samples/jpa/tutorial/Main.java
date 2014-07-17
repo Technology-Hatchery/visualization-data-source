@@ -83,6 +83,7 @@ public class Main
         emf.getCache().evictAll();
         System.out.println("");
 
+
         // Perform a retrieve of the Inventory and detach it (by closing the EM)
         em = emf.createEntityManager();
         tx = em.getTransaction();

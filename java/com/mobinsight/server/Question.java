@@ -27,11 +27,12 @@ public class Question {
     //private Key mId;
     private String serialNumber;
     private String mText;
+    @Basic(fetch = FetchType.EAGER)
     private Blob mImage;  // TODO: Blobstore is another possibility instead of storing here.
     private int mAnswerType;
 
     // Valid if mAnswerType==ANSWER_TYPE_CHOICE
-    @OneToMany(cascade = CascadeType.PERSIST)
+    @OneToMany(cascade = CascadeType.PERSIST, fetch = FetchType.EAGER)
     private List<String> mAnswerChoices;
 
     // Valid if mAnswerType==ANSWER_TYPE_RANGE

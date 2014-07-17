@@ -17,14 +17,14 @@ Contributors:
 **********************************************************************/
 package org.technologyhatchery.samples.datasources;
 
+import com.google.gson.stream.JsonWriter;
 import com.google.gson.stream.JsonReader;
 import org.apache.commons.io.IOUtils;
 import org.datanucleus.api.jpa.JPAEntityManager;
+import org.datanucleus.samples.jpa.tutorial.*;
 import org.datanucleus.util.NucleusLogger;
 
 import com.mobinsight.server.*;
-
-import org.technologyhatchery.items.*;
 
 import javax.persistence.*;
 import java.util.*;
@@ -36,6 +36,8 @@ import java.io.*;
  */
 public class LoadData
 {
+    private static String persistenceUnit = "MobinsightAlfred";
+
     //Does nothing constructor
     public LoadData() {
 
@@ -51,14 +53,18 @@ public class LoadData
     public static void main(String args[])
     {
         //Calls the internal functions when executing from the command lind
-        execute();
+        String filePath = "C:\\Users\\Alfred\\Dropbox\\Technology Hatchery Inc\\technical\\Git\\visualization-data-source_testing\\json\\mobinsight\\";
+        addDataFromJson(filePath + "Survey.json");
+        List<Survey> results = retrieveSurvey("Registration branch");
+        listSurveys(results, filePath + "listSurveys.json");
+        listQuestions(results.get(0), filePath + "listQuestions.json");
     }
 
-    public static void execute() {
+    public static void addDataFromJson(String filePath) {
         // Create an EntityManagerFactory for this "persistence-unit"
         // See the file "META-INF/persistence.xml"
         System.out.println("Create Entity Manager Factory<br />");
-        EntityManagerFactory emf = Persistence.createEntityManagerFactory("MobinsightAlfred");
+        EntityManagerFactory emf = Persistence.createEntityManagerFactory(persistenceUnit);
         //LoadData ex = new LoadData();
 
         System.out.println("Starting to execute the statements<br />");
@@ -80,7 +86,6 @@ public class LoadData
             Answer answer = new Answer();
 
             //Read survey from a file
-            String filePath = "C:\\Users\\Alfred\\Dropbox\\Technology Hatchery Inc\\technical\\Git\\visualization-data-source_testing\\json\\mobinsight\\Survey.json";
             BufferedReader br = new BufferedReader(new FileReader(filePath));
             JsonReader jsonReader = new JsonReader(br);
 
@@ -88,7 +93,6 @@ public class LoadData
             //InputStream is = new FileInputStream(f);
 
             //System.out.println(convertStreamToString(is));
-            //TODO: This call is throwing an error
             System.out.println("Begin Reading in from File<br />");
             survey.readFromJson(em, jsonReader);
             System.out.println("End Reading in from File<br />");
@@ -182,6 +186,92 @@ public class LoadData
         System.out.println("");
         System.out.println("End of Tutorial");
         emf.close();
+    }
+
+
+
+
+    public static void listQuestions(Survey survey, String filePath) {
+        EntityManagerFactory emf = Persistence.createEntityManagerFactory(persistenceUnit);
+        EntityManager em = emf.createEntityManager();
+
+        try {
+            //Write response to a file
+            PrintWriter fileWriter = new PrintWriter(filePath, "UTF-8");
+            JsonWriter jsonWriter = new JsonWriter(fileWriter);    //Output gets written to a JSON writer
+
+            //Write output to file
+            jsonWriter.beginObject();
+            jsonWriter.name("questions");
+            jsonWriter.beginArray();
+            for (Question item : survey.getQuestions()) {
+                item.writeToJson(jsonWriter);
+            }
+            jsonWriter.endArray();
+            jsonWriter.endObject();
+            jsonWriter.close();
+
+        } catch (IOException e) {
+            System.out.println("IO Exception.");
+        } finally {
+            em.close();
+        }
+    }
+
+    public static List<Survey> retrieveSurvey(String name) {
+        EntityManagerFactory emf = Persistence.createEntityManagerFactory(persistenceUnit);
+        EntityManager em = emf.createEntityManager();
+        TypedQuery<Survey> surveyquery;
+        List<Survey> results;
+
+        try {
+            // List all survey names & ids
+            surveyquery = em.createQuery(
+                    "SELECT s FROM Survey s WHERE s.mName=:p1",
+                    Survey.class);
+            surveyquery.setParameter("p1", name);
+            results = surveyquery.getResultList();
+
+            /*
+            //TODO-Alfred EntityGraph
+            EntityGraph allGraph = em.getEntityGraph("allProps");
+            Map hints = new HashMap();
+            hints.put("javax.persistence.loadgraph", allGraph);
+            inv = em.find(Inventory.class, "My Inventory", hints);*/
+
+            return results;
+
+        } catch (Exception e) {
+            System.out.println("IO Exception.");
+            return null;
+        } finally {
+            em.close();
+        }
+    }
+
+
+    public static void listSurveys(List<Survey> surveys, String filePath) {
+
+        try {
+        //Write response to a file
+        PrintWriter fileWriter = new PrintWriter(filePath, "UTF-8");
+        JsonWriter jsonWriter = new JsonWriter(fileWriter);    //Output gets written to a JSON writer
+
+
+        //Write output to file
+        jsonWriter.beginObject();
+        jsonWriter.name("surveys");
+        jsonWriter.beginArray();
+        for (Survey item : surveys) {
+            item.writeToJsonShort(jsonWriter);
+        }
+        jsonWriter.endArray();
+        jsonWriter.endObject();
+        jsonWriter.close();
+        } catch (IOException e) {
+            System.out.println("IO Exception.");
+        }
+
     }
 
     public static void performQuery(EntityManagerFactory emf) {
