@@ -10,12 +10,36 @@
         <servlet-name>RenjinServlet</servlet-name>
         <servlet-class>org.technologyhatchery.servlets.RenjinServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>AppEngineServlet</servlet-name>
+        <servlet-class>org.technologyhatchery.servlets.AppEngineServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>HelloWorldServlet</servlet-name>
+        <servlet-class>org.technologyhatchery.servlets.HelloWorldServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>SimpleServlet</servlet-name>
+        <servlet-class>org.technologyhatchery.servlets.SimpleServlet</servlet-class>
+    </servlet>
 
     <!-- Note: All <servlet> elements MUST be grouped together and
           placed IN FRONT of the <servlet-mapping> elements -->
 
     <servlet-mapping>
         <servlet-name>RenjinServlet</servlet-name>
-        <url-pattern>/*</url-pattern>
+        <url-pattern>/RenjinServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AppEngineServlet</servlet-name>
+        <url-pattern>/AppEngineServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>HelloWorldServlet</servlet-name>
+        <url-pattern>/HelloWorldServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SimpleServlet</servlet-name>
+        <url-pattern>/SimpleServlet</url-pattern>
     </servlet-mapping>
 </web-app>

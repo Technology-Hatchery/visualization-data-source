@@ -132,7 +132,8 @@ public class LoadData
             }
             em.close();
         }
-        emf.getCache().evictAll();
+        //TODO-Alfred What does this do?
+        //emf.getCache().evictAll();
         System.out.println("");
     }
 
@@ -223,16 +224,14 @@ public class LoadData
     public static List<Survey> retrieveSurvey(String name) {
         EntityManagerFactory emf = Persistence.createEntityManagerFactory(persistenceUnit);
         EntityManager em = emf.createEntityManager();
-        TypedQuery<Survey> surveyquery;
+        TypedQuery<Survey> surveyQuery;
         List<Survey> results;
 
         try {
             // List all survey names & ids
-            surveyquery = em.createQuery(
-                    "SELECT s FROM Survey s WHERE s.mName=:p1",
-                    Survey.class);
-            surveyquery.setParameter("p1", name);
-            results = surveyquery.getResultList();
+            surveyQuery = ((JPAEntityManager)em).createQuery("SELECT s FROM Survey s WHERE s.mName=:p1", Survey.class);
+            surveyQuery.setParameter("p1", name);
+            results = surveyQuery.getResultList();
 
             /*
             //TODO-Alfred EntityGraph
@@ -386,7 +385,7 @@ public class LoadData
             Answer answer = new Answer();
 
             //Read survey from a file
-            String filePath = "C:\\Users\\Alfred\\Dropbox\\Technology Hatchery Inc\\technical\\Git\\visualization-data-source_testing\\webapps\\HelloServlet\\WEB-INF\\classes\\Survey.json";
+            String filePath = "C:\\Users\\Alfred\\Dropbox\\Technology Hatchery Inc\\technical\\Git\\visualization-data-source_testing\\resources\\webapps\\HelloWorldServlet\\WEB-INF\\classes\\Survey.json";
             BufferedReader br = new BufferedReader(new FileReader(filePath));
             JsonReader jsonReader = new JsonReader(br);
 
@@ -437,7 +436,8 @@ public class LoadData
             }
             em.close();
         }
-        emf.getCache().evictAll();
+        //TODO-Alfred What does this do?
+        //emf.getCache().evictAll();
         System.out.println("");
     }
 

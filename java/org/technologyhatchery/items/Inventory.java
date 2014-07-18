@@ -38,7 +38,7 @@ public class Inventory
     @Id
     protected String name=null;
 
-    @OneToMany(cascade={CascadeType.PERSIST, CascadeType.MERGE, CascadeType.DETACH})
+    @OneToMany(cascade={CascadeType.PERSIST, CascadeType.MERGE})
     protected Set<Product> products = new HashSet<Product>();
 
     public Inventory(String name)
