@@ -9,7 +9,7 @@ output = paste(
     "<!DOCTYPE html>
     <html>
     <body>")
-output = paste(output,"<b>Here are some evaluations.  (Alfred edit)(againyyy)  Valid functions are name, sin, cos and tan:</b> <br /><br />")
+output = paste(output,"<b>Here are some evaluations.  (Alfred edit)(againzzz)  Valid functions are name, sin, cos and tan:</b> <br /><br />")
 
   if(!is.null(queryParams$name)) {
     output = paste(output,"Hello", queryParams$name,"<br />")
