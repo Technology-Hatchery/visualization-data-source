@@ -1,2 +1,6 @@
 target
-.idea
+.idea/scopes
+.idea/artifacts
+.idea/copyright
+.idea/libraries/Maven__*
+.idea/*.*
