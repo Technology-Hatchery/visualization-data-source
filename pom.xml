@@ -113,11 +113,13 @@
         <dependency>
             <groupId>org.datanucleus</groupId>
             <artifactId>datanucleus-rdbms</artifactId>
-            <!--version>1.0.2</version-->
-            <!--version>2.2.4</version-->
-            <!--version>3.0.10</version-->
             <version>[4.0.0-m1, 4.9)</version>
         </dependency>
+        <!--dependency>
+            <groupId>org.datanucleus</groupId>
+            <artifactId>datanucleus-accessplatform-jpa-rdbms</artifactId>
+            <version>4.0.0-release</version>
+        </dependency-->
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>

@@ -37,7 +37,7 @@
       </configuration>
     </facet>
   </component>
-  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_6" inherit-compiler-output="true">
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_6" inherit-compiler-output="false">
     <output url="file://$MODULE_DIR$/target/classes" />
     <output-test url="file://$MODULE_DIR$/target/test-classes" />
     <content url="file://$MODULE_DIR$">
@@ -119,7 +119,7 @@
       <excludeFolder url="file://$MODULE_DIR$/js/node_modules/npm/node_modules/request/node_modules/form-data/node_modules/combined-stream/node_modules/delayed-stream/test/integration" />
       <excludeFolder url="file://$MODULE_DIR$/resources/webapps/AppEngine/WEB-INF" />
       <excludeFolder url="file://$MODULE_DIR$/resources/webapps/HelloServlet/WEB-INF" />
-      <excludeFolder url="file://$MODULE_DIR$/target/RenjinServlet_exploded" />
+      <excludeFolder url="file://$MODULE_DIR$/target/artifacts" />
       <excludeFolder url="file://$MODULE_DIR$/target/classes" />
     </content>
     <orderEntry type="inheritedJdk" />
@@ -131,6 +131,17 @@
         <SOURCES>
           <root url="file://$MODULE_DIR$/../mobinsight/src" />
         </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="CloudSDK 1.9.7">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../appengine-java-sdk-1.9.7/lib/opt/user/datanucleus/v1/datanucleus-core-1.1.5.jar!/" />
+          <root url="jar://$MODULE_DIR$/../appengine-java-sdk-1.9.7/lib/opt/user/datanucleus/v1/datanucleus-jpa-1.1.5.jar!/" />
+          <root url="jar://$MODULE_DIR$/../appengine-java-sdk-1.9.7/lib/user/orm/datanucleus-appengine-1.0.10.final.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
       </library>
     </orderEntry>
     <orderEntry type="library" name="Maven: org.apache.shiro:shiro-all:1.2.3" level="project" />
@@ -193,17 +204,6 @@
     <orderEntry type="library" name="Maven: org.renjin:utils:0.7.0-RC6" level="project" />
     <orderEntry type="library" name="Maven: org.renjin:methods:0.7.0-RC6" level="project" />
     <orderEntry type="library" name="Maven: org.renjin:datasets:0.7.0-RC6" level="project" />
-    <orderEntry type="module-library">
-      <library name="CloudSDK 1.9.7">
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/../appengine-java-sdk-1.9.7/lib/opt/user/datanucleus/v1/datanucleus-core-1.1.5.jar!/" />
-          <root url="jar://$MODULE_DIR$/../appengine-java-sdk-1.9.7/lib/opt/user/datanucleus/v1/datanucleus-jpa-1.1.5.jar!/" />
-          <root url="jar://$MODULE_DIR$/../appengine-java-sdk-1.9.7/lib/user/orm/datanucleus-appengine-1.0.10.final.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
   </component>
 </module>
 
