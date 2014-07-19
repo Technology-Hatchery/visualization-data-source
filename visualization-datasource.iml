@@ -32,6 +32,7 @@
         <setting name="provider-name" value="" />
         <datasource-mapping>
           <factory-entry name="MobinsightAlfred" />
+          <factory-entry name="transactions-optional" />
         </datasource-mapping>
         <deploymentDescriptor name="persistence.xml" url="file://$MODULE_DIR$/resources/META-INF/persistence.xml" />
       </configuration>
@@ -44,6 +45,7 @@
       <sourceFolder url="file://$MODULE_DIR$/java" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/resources" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/target/generated-sources/annotations" isTestSource="false" generated="true" />
+      <excludeFolder url="file://$MODULE_DIR$/java/com" />
       <excludeFolder url="file://$MODULE_DIR$/java/com/google/appengine" />
       <excludeFolder url="file://$MODULE_DIR$/java/com/google/appengine/api/appidentity" />
       <excludeFolder url="file://$MODULE_DIR$/java/com/google/appengine/api/backends" />
@@ -114,12 +116,13 @@
       <excludeFolder url="file://$MODULE_DIR$/java/org/datanucleus/util/archive" />
       <excludeFolder url="file://$MODULE_DIR$/java/org/technologyhatchery/applets" />
       <excludeFolder url="file://$MODULE_DIR$/java/org/technologyhatchery/interface" />
+      <excludeFolder url="file://$MODULE_DIR$/java/org/technologyhatchery/items" />
+      <excludeFolder url="file://$MODULE_DIR$/java/org/technologyhatchery/samples" />
       <excludeFolder url="file://$MODULE_DIR$/java/org/technologyhatchery/samples/datasources/archive" />
       <excludeFolder url="file://$MODULE_DIR$/java/org/technologyhatchery/servlets/archive" />
       <excludeFolder url="file://$MODULE_DIR$/js/node_modules/npm/node_modules/request/node_modules/form-data/node_modules/combined-stream/node_modules/delayed-stream/test/integration" />
       <excludeFolder url="file://$MODULE_DIR$/resources/webapps/AppEngine/WEB-INF" />
       <excludeFolder url="file://$MODULE_DIR$/resources/webapps/HelloServlet/WEB-INF" />
-      <excludeFolder url="file://$MODULE_DIR$/target/artifacts" />
       <excludeFolder url="file://$MODULE_DIR$/target/classes" />
     </content>
     <orderEntry type="inheritedJdk" />
@@ -136,31 +139,21 @@
     <orderEntry type="module-library">
       <library name="CloudSDK 1.9.7">
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/../appengine-java-sdk-1.9.7/lib/opt/user/datanucleus/v1/datanucleus-core-1.1.5.jar!/" />
-          <root url="jar://$MODULE_DIR$/../appengine-java-sdk-1.9.7/lib/opt/user/datanucleus/v1/datanucleus-jpa-1.1.5.jar!/" />
           <root url="jar://$MODULE_DIR$/../appengine-java-sdk-1.9.7/lib/user/orm/datanucleus-appengine-1.0.10.final.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="library" name="Maven: org.apache.shiro:shiro-all:1.2.3" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.shiro:shiro-guice:1.2.3" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.shiro:shiro-core:1.2.3" level="project" />
-    <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.6.4" level="project" />
-    <orderEntry type="library" name="Maven: commons-beanutils:commons-beanutils:1.8.3" level="project" />
-    <orderEntry type="library" name="Maven: com.google.guava:guava:13.0" level="project" />
-    <orderEntry type="library" name="Maven: com.google.inject:guice:3.0" level="project" />
-    <orderEntry type="library" name="Maven: javax.inject:javax.inject:1" level="project" />
-    <orderEntry type="library" name="Maven: aopalliance:aopalliance:1.0" level="project" />
-    <orderEntry type="library" name="Maven: com.google.inject.extensions:guice-multibindings:3.0" level="project" />
+    <orderEntry type="library" name="Maven: org.datanucleus:datanucleus-enhancer:3.1.1" level="project" />
+    <orderEntry type="library" name="Maven: org.ow2.asm:asm:4.0" level="project" />
+    <orderEntry type="library" name="Maven: org.datanucleus:datanucleus-core:3.1.0-m5" level="project" />
+    <orderEntry type="library" name="Maven: org.datanucleus:datanucleus-api-jpa:4.0.1" level="project" />
     <orderEntry type="library" name="Maven: org.datanucleus:javax.persistence:2.1.0" level="project" />
-    <orderEntry type="library" name="Maven: log4j:log4j:1.2.17" level="project" />
-    <orderEntry type="library" name="Maven: org.datanucleus:datanucleus-rdbms:4.0.1" level="project" />
-    <orderEntry type="library" name="Maven: mysql:mysql-connector-java:5.1.17" level="project" />
     <orderEntry type="library" name="Maven: com.google.appengine:appengine-api-1.0-sdk:1.9.7" level="project" />
     <orderEntry type="library" name="Maven: com.google.code.gson:gson:1.7.1" level="project" />
     <orderEntry type="library" name="Maven: com.googlecode.objectify:objectify:5.0.3" level="project" />
+    <orderEntry type="library" name="Maven: com.google.guava:guava:17.0" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: javax:javaee-api:7.0" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: com.sun.mail:javax.mail:1.5.0" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: javax.activation:activation:1.1" level="project" />
