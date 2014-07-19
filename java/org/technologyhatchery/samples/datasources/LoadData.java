@@ -20,9 +20,10 @@ package org.technologyhatchery.samples.datasources;
 import com.google.gson.stream.JsonWriter;
 import com.google.gson.stream.JsonReader;
 //import org.apache.commons.io.IOUtils;
-import org.datanucleus.api.jpa.JPAEntityManager;
+//import org.datanucleus.api.jpa.JPAEntityManager;
+//import org.datanucleus.jpa.EntityManagerImpl;
 //import org.datanucleus.samples.jpa.tutorial.*;
-import org.datanucleus.util.NucleusLogger;
+//import org.datanucleus.util.NucleusLogger;
 //import org.datanucleus.jpa.EntityManagerFactoryImpl;
 //import org.datanucleus.jpa.EntityManagerImpl;
 
@@ -123,7 +124,7 @@ public class LoadData
             //em.persist(question);
             //em.persist(answer);
         } catch (Exception e) {
-            NucleusLogger.GENERAL.error(">> Exception persisting data", e);
+            //NucleusLogger.GENERAL.error(">> Exception persisting data", e);
             System.err.println("Error persisting data : " + e.getMessage());
             return;
         } finally {
@@ -229,7 +230,7 @@ public class LoadData
 
         try {
             // List all survey names & ids
-            surveyQuery = ((JPAEntityManager)em).createQuery("SELECT s FROM Survey s WHERE s.mName=:p1", Survey.class);
+            surveyQuery = em.createQuery("SELECT s FROM Survey s WHERE s.mName=:p1", Survey.class);
             surveyQuery.setParameter("p1", name);
             results = surveyQuery.getResultList();
 
@@ -424,7 +425,7 @@ public class LoadData
         }
         catch (Exception e)
         {
-            NucleusLogger.GENERAL.error(">> Exception persisting data", e);
+            //NucleusLogger.GENERAL.error(">> Exception persisting data", e);
             System.err.println("Error persisting data : " + e.getMessage());
             return;
         }

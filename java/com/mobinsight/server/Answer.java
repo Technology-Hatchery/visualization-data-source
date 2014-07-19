@@ -20,7 +20,9 @@ public class Answer {
 
     // ID of the user who gave this answer.
     @ManyToOne
-    public Key mUser;
+    public int mUser;
+    //public Key mUser;
+
 
     //The values associated with the response
     public int mAnswerIndex;  // valid if answer type was CHOICE

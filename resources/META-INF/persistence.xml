@@ -6,7 +6,8 @@
     <!-- Mobinsight Alfred "unit" -->
     <persistence-unit name="MobinsightAlfred">
         <!--mapping-file>../resources/META-INF/orm.xml</mapping-file-->
-        <provider>org.datanucleus.api.jpa.PersistenceProviderImpl</provider>
+        <provider>org.datanucleus.jpa.PersistenceProviderImpl</provider>
+        <!--provider>org.datanucleus.api.jpa.PersistenceProviderImpl</provider-->
         <!--class>com.mobinsight.server.Answer</class-->
         <!--class>com.mobinsight.server.Question</class-->
         <!--class>com.mobinsight.server.Survey</class-->
@@ -21,6 +22,15 @@
 
             <property name="datanucleus.schema.autoCreateAll" value="true"/>
             <!--property name="openjpa.jdbc.SynchronizeMappings" value="buildSchema(ForeignKeys=true)"/-->
+        </properties>
+    </persistence-unit>
+
+    <persistence-unit name="transactions-optional">
+        <provider>org.datanucleus.store.appengine.jpa.DatastorePersistenceProvider</provider>
+        <properties>
+            <property name="datanucleus.NontransactionalRead" value="true"/>
+            <property name="datanucleus.NontransactionalWrite" value="true"/>
+            <property name="datanucleus.ConnectionURL" value="appengine"/>
         </properties>
     </persistence-unit>
 

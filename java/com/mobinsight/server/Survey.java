@@ -17,8 +17,8 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 
 @Entity
-@NamedEntityGraph(name="allProps",
-        attributeNodes={@NamedAttributeNode("mId"), @NamedAttributeNode("mQuestions")})
+//@NamedEntityGraph(name="allProps",
+//        attributeNodes={@NamedAttributeNode("mId"), @NamedAttributeNode("mQuestions")})
 public class Survey {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

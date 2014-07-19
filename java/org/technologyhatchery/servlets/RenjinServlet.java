@@ -63,7 +63,7 @@ public class RenjinServlet extends HttpServlet {
             }
 
             // load the application script
-            String scriptPath = servletContext.getRealPath("WEB-INF/R/app.R");
+            String scriptPath = servletContext.getRealPath("R/app.R");
             Reader reader = new FileReader(scriptPath);
             
             try {
@@ -74,7 +74,7 @@ public class RenjinServlet extends HttpServlet {
             }
 
             //Read data in from json file
-            scriptPath = servletContext.getRealPath("WEB-INF/json/sampleData.json");
+            scriptPath = servletContext.getRealPath("json/sampleData.json");
             reader = new FileReader(scriptPath);
 
             CharBuffer charBuffer = CharBuffer.allocate(1000);

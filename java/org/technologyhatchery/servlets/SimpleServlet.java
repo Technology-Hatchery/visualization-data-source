@@ -2,8 +2,10 @@
 package org.technologyhatchery.servlets;
 
 //import com.google.gson.stream.JsonWriter;
+import com.mobinsight.server.EMF;
 import org.technologyhatchery.samples.datasources.LoadData;
 
+import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 import javax.servlet.ServletException;
@@ -46,8 +48,14 @@ public class SimpleServlet extends HttpServlet {
             // ------------- Data Entries (Start) ---------------------
             // Create an EntityManagerFactory for this "persistence-unit"
             // See the file "META-INF/persistence.xml"
-            out.println("Create Entity Manager Factory<br />");
-            EntityManagerFactory emf = Persistence.createEntityManagerFactory("MobinsightAlfred");
+            out.println("Try to Create Entity Manager Factory<br />");
+            //TODO-Alfred Figure out how this works
+            //EntityManagerFactory emf = EMF.get();
+            //EntityManagerFactory emf = Persistence.createEntityManagerFactory("MobinsightAlfred");
+            EntityManagerFactory emf = Persistence.createEntityManagerFactory("transactions-optional");
+            out.println("Try to Create Entity Manager<br />");
+            EntityManager em = emf.createEntityManager();
+            out.println("Successfully Created Entity Manager<br />");
             LoadData ex = new LoadData();
 
             out.println("Starting to execute the statements<br />");
@@ -69,7 +77,7 @@ public class SimpleServlet extends HttpServlet {
 
             out.println("<h1>" + title + "</h1>");  // Prints "Hello, world!"
             // Set a hyperlink image to refresh this page
-            out.println("<a href='" + request.getRequestURI() + "'><img src='images/return.gif'></a>");
+            out.println("<a href='" + request.getRequestURI() + "'><img src='webapps/SimpleServlet/images/return.gif'></a>");
             out.println("</body></html>");
         } finally {
             out.close();  // Always close the output writer

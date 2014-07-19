@@ -31,8 +31,8 @@ import javax.persistence.OneToMany;
  * Definition of an Inventory of products.
  */
 @Entity
-@NamedEntityGraph(name="allProps", 
-    attributeNodes={@NamedAttributeNode("name"), @NamedAttributeNode("products")})
+//@NamedEntityGraph(name="allProps",
+//    attributeNodes={@NamedAttributeNode("name"), @NamedAttributeNode("products")})
 public class Inventory
 {
     @Id

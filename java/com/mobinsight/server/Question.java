@@ -370,7 +370,9 @@ public class Question {
 
         // Add the user id to our index array so we can search quickly all questions answered by
         // this user.
-        mUsersAnswered.add(KeyFactory.keyToString(item.mUser));
+        //TODO-Key
+        mUsersAnswered.add(String.valueOf(item.mUser));
+        //mUsersAnswered.add(KeyFactory.keyToString(item.mUser));
 
         em.persist(this);
         return true;
@@ -394,7 +396,9 @@ public class Question {
         // TODO: This should be optimised so instead of looping through answers from all users it should
         // query just for the answer of this user.
         for (Answer item : refQuestion.mAnswers) {
-            if (!item.mUser.equals(user.getId())) {
+            //TODO-Key
+            if (item.mUser != Integer.parseInt(user.getId())) {
+            //if (!item.mUser.equals(user.getId())) {
                 continue;
             }
 
