@@ -40,6 +40,60 @@
   <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_6" inherit-compiler-output="false">
     <output url="file://$MODULE_DIR$/target/classes" />
     <output-test url="file://$MODULE_DIR$/target/test-classes" />
+    <content url="file://$MAVEN_REPOSITORY$">
+      <sourceFolder url="file://$MAVEN_REPOSITORY$/com/google/appengine/appengine-java-sdk/1.9.7/appengine-java-sdk/appengine-java-sdk-1.9.7/demos/helloorm2/src" isTestSource="false" />
+      <sourceFolder url="file://$MAVEN_REPOSITORY$/com/google/appengine/appengine-java-sdk/1.8.4/appengine-java-sdk/appengine-java-sdk-1.8.4/demos/helloservers/src" isTestSource="false" />
+      <sourceFolder url="file://$MAVEN_REPOSITORY$/com/google/appengine/appengine-java-sdk/1.9.7/appengine-java-sdk/appengine-java-sdk-1.9.7/demos/helloxmpp/src" isTestSource="false" />
+      <sourceFolder url="file://$MAVEN_REPOSITORY$/com/google/appengine/appengine-java-sdk/1.9.6/appengine-java-sdk/appengine-java-sdk-1.9.6/demos/guestbook/src" isTestSource="false" />
+      <sourceFolder url="file://$MAVEN_REPOSITORY$/com/google/appengine/appengine-java-sdk/1.7.5/appengine-java-sdk/appengine-java-sdk-1.7.5/demos/new_project_template/src" isTestSource="false" />
+      <sourceFolder url="file://$MAVEN_REPOSITORY$/com/google/appengine/appengine-java-sdk/1.8.4/appengine-java-sdk/appengine-java-sdk-1.8.4/demos/mediastore/src" isTestSource="false" />
+      <sourceFolder url="file://$MAVEN_REPOSITORY$/com/google/appengine/appengine-java-sdk/1.8.4/appengine-java-sdk/appengine-java-sdk-1.8.4/demos/helloorm/src" isTestSource="false" />
+      <sourceFolder url="file://$MAVEN_REPOSITORY$/com/google/appengine/appengine-java-sdk/1.9.7/appengine-java-sdk/appengine-java-sdk-1.9.7/demos/mediastore/src" isTestSource="false" />
+      <sourceFolder url="file://$MAVEN_REPOSITORY$/com/google/appengine/appengine-java-sdk/1.9.6/appengine-java-sdk/appengine-java-sdk-1.9.6/demos/helloxmpp/src" isTestSource="false" />
+      <sourceFolder url="file://$MAVEN_REPOSITORY$/com/google/appengine/appengine-java-sdk/1.7.5/appengine-java-sdk/appengine-java-sdk-1.7.5/demos/guestbook/src" isTestSource="false" />
+      <sourceFolder url="file://$MAVEN_REPOSITORY$/com/google/appengine/appengine-java-sdk/1.9.6/appengine-java-sdk/appengine-java-sdk-1.9.6/demos/taskengine/src" isTestSource="false" />
+      <sourceFolder url="file://$MAVEN_REPOSITORY$/com/google/appengine/appengine-java-sdk/1.9.6/appengine-java-sdk/appengine-java-sdk-1.9.6/demos/jdoexamples/src" isTestSource="false" />
+      <sourceFolder url="file://$MAVEN_REPOSITORY$/com/google/appengine/appengine-java-sdk/1.7.5/appengine-java-sdk/appengine-java-sdk-1.7.5/demos/mandelbrot/src" isTestSource="false" />
+      <sourceFolder url="file://$MAVEN_REPOSITORY$/com/google/appengine/appengine-java-sdk/1.8.4/appengine-java-sdk/appengine-java-sdk-1.8.4/demos/new_project_template/src" isTestSource="false" />
+      <sourceFolder url="file://$MAVEN_REPOSITORY$/com/google/appengine/appengine-java-sdk/1.9.7/appengine-java-sdk/appengine-java-sdk-1.9.7/demos/jdoexamples/src" isTestSource="false" />
+      <sourceFolder url="file://$MAVEN_REPOSITORY$/com/google/appengine/appengine-java-sdk/1.9.7/appengine-java-sdk/appengine-java-sdk-1.9.7/demos/new_project_template/src" isTestSource="false" />
+      <sourceFolder url="file://$MAVEN_REPOSITORY$/com/google/appengine/appengine-java-sdk/1.9.6/appengine-java-sdk/appengine-java-sdk-1.9.6/demos/shardedcounter/src" isTestSource="false" />
+      <sourceFolder url="file://$MAVEN_REPOSITORY$/com/google/appengine/appengine-java-sdk/1.9.7/appengine-java-sdk/appengine-java-sdk-1.9.7/demos/helloorm/src" isTestSource="false" />
+      <sourceFolder url="file://$MAVEN_REPOSITORY$/com/google/appengine/appengine-java-sdk/1.9.7/appengine-java-sdk/appengine-java-sdk-1.9.7/demos/shardedcounter/src" isTestSource="false" />
+      <sourceFolder url="file://$MAVEN_REPOSITORY$/com/google/appengine/appengine-java-sdk/1.8.4/appengine-java-sdk/appengine-java-sdk-1.8.4/demos/helloxmpp/src" isTestSource="false" />
+      <sourceFolder url="file://$MAVEN_REPOSITORY$/com/google/appengine/appengine-java-sdk/1.8.4/appengine-java-sdk/appengine-java-sdk-1.8.4/demos/guestbook/src" isTestSource="false" />
+      <sourceFolder url="file://$MAVEN_REPOSITORY$/com/google/appengine/appengine-java-sdk/1.9.6/appengine-java-sdk/appengine-java-sdk-1.9.6/demos/helloservers/src" isTestSource="false" />
+      <sourceFolder url="file://$MAVEN_REPOSITORY$/com/google/appengine/appengine-java-sdk/1.9.6/appengine-java-sdk/appengine-java-sdk-1.9.6/demos/mediastore/src" isTestSource="false" />
+      <sourceFolder url="file://$MAVEN_REPOSITORY$/com/google/appengine/appengine-java-sdk/1.7.5/appengine-java-sdk/appengine-java-sdk-1.7.5/demos/helloorm2/src" isTestSource="false" />
+      <sourceFolder url="file://$MAVEN_REPOSITORY$/com/google/appengine/appengine-java-sdk/1.9.6/appengine-java-sdk/appengine-java-sdk-1.9.6/demos/new_project_template/src" isTestSource="false" />
+      <sourceFolder url="file://$MAVEN_REPOSITORY$/com/google/appengine/appengine-java-sdk/1.8.4/appengine-java-sdk/appengine-java-sdk-1.8.4/demos/helloorm2/src" isTestSource="false" />
+      <sourceFolder url="file://$MAVEN_REPOSITORY$/com/google/appengine/appengine-java-sdk/1.9.6/appengine-java-sdk/appengine-java-sdk-1.9.6/demos/sticky/src" isTestSource="false" />
+      <sourceFolder url="file://$MAVEN_REPOSITORY$/com/google/appengine/appengine-java-sdk/1.7.5/appengine-java-sdk/appengine-java-sdk-1.7.5/demos/helloservers/src" isTestSource="false" />
+      <sourceFolder url="file://$MAVEN_REPOSITORY$/com/google/appengine/appengine-java-sdk/1.9.7/appengine-java-sdk/appengine-java-sdk-1.9.7/demos/taskengine/src" isTestSource="false" />
+      <sourceFolder url="file://$MAVEN_REPOSITORY$/com/google/appengine/appengine-java-sdk/1.7.5/appengine-java-sdk/appengine-java-sdk-1.7.5/demos/helloorm/src" isTestSource="false" />
+      <sourceFolder url="file://$MAVEN_REPOSITORY$/com/google/appengine/appengine-java-sdk/1.9.6/appengine-java-sdk/appengine-java-sdk-1.9.6/demos/mandelbrot/src" isTestSource="false" />
+      <sourceFolder url="file://$MAVEN_REPOSITORY$/com/google/appengine/appengine-java-sdk/1.9.7/appengine-java-sdk/appengine-java-sdk-1.9.7/demos/sticky/src" isTestSource="false" />
+      <sourceFolder url="file://$MAVEN_REPOSITORY$/com/google/appengine/appengine-java-sdk/1.7.5/appengine-java-sdk/appengine-java-sdk-1.7.5/demos/taskengine/src" isTestSource="false" />
+      <sourceFolder url="file://$MAVEN_REPOSITORY$/com/google/appengine/appengine-java-sdk/1.9.7/appengine-java-sdk/appengine-java-sdk-1.9.7/demos/guestbook/src" isTestSource="false" />
+      <sourceFolder url="file://$MAVEN_REPOSITORY$/com/google/appengine/appengine-java-sdk/1.8.4/appengine-java-sdk/appengine-java-sdk-1.8.4/demos/shardedcounter/src" isTestSource="false" />
+      <sourceFolder url="file://$MAVEN_REPOSITORY$/com/google/appengine/appengine-java-sdk/1.8.4/appengine-java-sdk/appengine-java-sdk-1.8.4/demos/mandelbrot/src" isTestSource="false" />
+      <sourceFolder url="file://$MAVEN_REPOSITORY$/com/google/appengine/appengine-java-sdk/1.7.5/appengine-java-sdk/appengine-java-sdk-1.7.5/demos/mediastore/src" isTestSource="false" />
+      <sourceFolder url="file://$MAVEN_REPOSITORY$/com/google/appengine/appengine-java-sdk/1.9.6/appengine-java-sdk/appengine-java-sdk-1.9.6/demos/taskqueueexamples/src" isTestSource="false" />
+      <sourceFolder url="file://$MAVEN_REPOSITORY$/com/google/appengine/appengine-java-sdk/1.9.6/appengine-java-sdk/appengine-java-sdk-1.9.6/demos/helloorm/src" isTestSource="false" />
+      <sourceFolder url="file://$MAVEN_REPOSITORY$/com/google/appengine/appengine-java-sdk/1.8.4/appengine-java-sdk/appengine-java-sdk-1.8.4/demos/jdoexamples/src" isTestSource="false" />
+      <sourceFolder url="file://$MAVEN_REPOSITORY$/com/google/appengine/appengine-java-sdk/1.7.5/appengine-java-sdk/appengine-java-sdk-1.7.5/demos/helloxmpp/src" isTestSource="false" />
+      <sourceFolder url="file://$MAVEN_REPOSITORY$/com/google/appengine/appengine-java-sdk/1.7.5/appengine-java-sdk/appengine-java-sdk-1.7.5/demos/jdoexamples/src" isTestSource="false" />
+      <sourceFolder url="file://$MAVEN_REPOSITORY$/com/google/appengine/appengine-java-sdk/1.8.4/appengine-java-sdk/appengine-java-sdk-1.8.4/demos/taskqueueexamples/src" isTestSource="false" />
+      <sourceFolder url="file://$MAVEN_REPOSITORY$/com/google/appengine/appengine-java-sdk/1.7.5/appengine-java-sdk/appengine-java-sdk-1.7.5/demos/sticky/src" isTestSource="false" />
+      <sourceFolder url="file://$MAVEN_REPOSITORY$/com/google/appengine/appengine-java-sdk/1.9.7/appengine-java-sdk/appengine-java-sdk-1.9.7/demos/helloservers/src" isTestSource="false" />
+      <sourceFolder url="file://$MAVEN_REPOSITORY$/com/google/appengine/appengine-java-sdk/1.8.4/appengine-java-sdk/appengine-java-sdk-1.8.4/demos/sticky/src" isTestSource="false" />
+      <sourceFolder url="file://$MAVEN_REPOSITORY$/com/google/appengine/appengine-java-sdk/1.7.5/appengine-java-sdk/appengine-java-sdk-1.7.5/demos/shardedcounter/src" isTestSource="false" />
+      <sourceFolder url="file://$MAVEN_REPOSITORY$/com/google/appengine/appengine-java-sdk/1.8.4/appengine-java-sdk/appengine-java-sdk-1.8.4/demos/taskengine/src" isTestSource="false" />
+      <sourceFolder url="file://$MAVEN_REPOSITORY$/com/google/appengine/appengine-java-sdk/1.9.7/appengine-java-sdk/appengine-java-sdk-1.9.7/demos/taskqueueexamples/src" isTestSource="false" />
+      <sourceFolder url="file://$MAVEN_REPOSITORY$/com/google/appengine/appengine-java-sdk/1.7.5/appengine-java-sdk/appengine-java-sdk-1.7.5/demos/taskqueueexamples/src" isTestSource="false" />
+      <sourceFolder url="file://$MAVEN_REPOSITORY$/com/google/appengine/appengine-java-sdk/1.9.7/appengine-java-sdk/appengine-java-sdk-1.9.7/demos/mandelbrot/src" isTestSource="false" />
+      <sourceFolder url="file://$MAVEN_REPOSITORY$/com/google/appengine/appengine-java-sdk/1.9.6/appengine-java-sdk/appengine-java-sdk-1.9.6/demos/helloorm2/src" isTestSource="false" />
+    </content>
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/java" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/resources" type="java-resource" />
@@ -193,17 +247,7 @@
     <orderEntry type="library" name="Maven: org.renjin:utils:0.7.0-RC6" level="project" />
     <orderEntry type="library" name="Maven: org.renjin:methods:0.7.0-RC6" level="project" />
     <orderEntry type="library" name="Maven: org.renjin:datasets:0.7.0-RC6" level="project" />
-    <orderEntry type="module-library">
-      <library name="CloudSDK 1.9.7">
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/../appengine-java-sdk-1.9.7/lib/opt/tools/datanucleus/v1/datanucleus-jpa-1.1.5.jar!/" />
-          <root url="jar://$MODULE_DIR$/../appengine-java-sdk-1.9.7/lib/opt/tools/datanucleus/v1/datanucleus-core-1.1.5.jar!/" />
-          <root url="jar://$MODULE_DIR$/../appengine-java-sdk-1.9.7/lib/opt/user/datanucleus/v1/datanucleus-appengine-1.0.10.final.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
+    <orderEntry type="library" name="CloudSDK 1.9.7" level="project" />
   </component>
 </module>
 
